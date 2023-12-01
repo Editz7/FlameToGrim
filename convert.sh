@@ -1,25 +1,20 @@
 #!/bin/bash
 
-# Path to the original zipline.sh script
 ORIGINAL_SCRIPT_PATH="zipline.sh"
 NEW_SCRIPT_PATH="$HOME/Downloads/screenshot.sh"
 
-# Extract the authorization header and upload URL from the original script
 AUTH_HEADER=$(grep -oP 'authorization: \K[^ ]+' "$ORIGINAL_SCRIPT_PATH")
 UPLOAD_URL=$(grep -oP 'https://\K[^ ]+' "$ORIGINAL_SCRIPT_PATH")
 
-# Create a new script for Hyprland
 cat > "$NEW_SCRIPT_PATH" <<EOF
 #!/bin/bash
 TMP_DIR="/tmp"
 NAME="screenshot_\$(date +%d%m%Y_%H%M%S).png"
 FILE_PATH="\$TMP_DIR/\$NAME"
 
-# Capture fullscreen screenshot
 grim "\$FILE_PATH"
 notify-send "Temporary Screenshot created"
 
-# Upload the screenshot
 if [ -f "\$FILE_PATH" ]; then
     UPLOAD_URL=\$(curl -H "authorization: $AUTH_HEADER https://$UPLOAD_URL -F file=@"\$FILE_PATH" -H "Content-Type: multipart/form-data" | jq -r '.files[0]')
     if [ -n "\$UPLOAD_URL" ]; then
