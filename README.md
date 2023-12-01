@@ -1,7 +1,7 @@
 # Hyprland Screenshot Tool
 
 ## Description
-
+**THIS IS INTENDED FOR ZIPLINE FILE UPLOAD SERVICE!**
 This repository contains a script for taking and uploading screenshots in a Hyprland environment. The script is designed to capture fullscreen screenshots, upload them to a specified server, and then delete the local copy, making the screenshot process quick and efficient.
 
 ## Features
