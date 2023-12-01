@@ -24,29 +24,29 @@ This repository contains a script for taking and uploading screenshots in a Hypr
 
 Clone the repository:
 
-\```bash
+```bash
 git clone [https://github.com/Editz7/FlameToGrim]
-\```
+```
 
 Navigate to the downloaded directory:
 
-\```bash
+```bash
 cd FlameToGrim
-\```
+```
 
 Make the script executable:
 
-\```bash
+```bash
 chmod +x screenshot.sh
-\```
+```
 
 ## Usage
 
 Run the script:
 
-\```bash
+```bash
 ./hyprland_screenshot_temp.sh
-\```
+```
 
 The script will take a fullscreen screenshot, upload it, copy the upload URL to the clipboard, and then delete the local copy of the screenshot.
 
