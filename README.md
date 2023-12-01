@@ -22,6 +22,10 @@ This repository contains a script for taking and uploading screenshots in a Hypr
 
 ## Installation
 
+Download the Flameshot Script (zipline.sh):
+
+Ensure you download the zipline.sh script, which is initially set up for Flameshot. This script will be converted for use with Hyprland.
+
 Clone the repository:
 
 ```bash
