@@ -50,10 +50,6 @@ Run the script:
 
 The script will take a fullscreen screenshot, upload it, copy the upload URL to the clipboard, and then delete the local copy of the screenshot.
 
-## Configuration
-
-Modify the `zipline.sh` script to change the server details or authorization header as needed for your setup.
-
 ## Contribution
 
 Contributions are welcome. Please fork the repository and submit a pull request with your changes.
